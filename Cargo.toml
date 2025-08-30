@@ -1,9 +1,28 @@
 [package]
 name = "rustzot_api"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2024"
+description = "A Rust API wrapper for the Anteater API at UCI (https://anteaterapi.com)"
+authors = ["Chris Rios <robotman40@protonmail.com"]
+license = "MIT"
+keywords = ["zot", "anteater", "uci", "irvine"]
+categories = ["network-programming", "api-bindings"]
+readme = "README.md"
+repository = "https://github.com/robotman40/rustzot_api.git"
+homepage = "https://github.com/Pierre-Thibault/roman_numerals"
 
 [dependencies]
 reqwest = {version = "0.12.23", features = ["blocking"]}
 serde = "1.0.219"
 serde_json = "1.0.143"
+
+[lib]
+name = "rustzot_api"
+path = "src/lib.rs"
+test = true
+doctest = true
+bench = true
+doc = true
+proc-macro = false
+crate-type = ["lib"]
+required-features = []
