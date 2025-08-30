@@ -1,4 +1,4 @@
-# zotrust_api
+# rustzot_api
 A simple API wrapper around the Anteater API at UCI (https://anteaterapi.com) for retrieving information related to UCI, such as courses, in json format.
 
 # Why did I make this?
