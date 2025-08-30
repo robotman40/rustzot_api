@@ -1,10 +1,10 @@
 pub mod websoc;
 pub mod grades;
 pub mod courses;
-pub mod enrollment;
+pub mod enrollment_history;
 pub mod instructors;
 pub mod ap;
-pub mod calender;
+pub mod calendar;
 pub mod larc;
 pub mod other;
 pub mod programs;
@@ -37,7 +37,7 @@ mod tests {
             ("quarter", "Fall")
         ];
 
-        let result = calender::retrieve_term_calendar(&parameters);
+        let result = calendar::retrieve_term_calendar(&parameters);
 
         assert_eq!(result["data"]["year"], "2024")
     }
@@ -46,7 +46,7 @@ mod tests {
     fn list_all_calendars() {
         // It will change over time, so we cannot have a reliable check with this
         // so let's just make sure it works
-        let result = calender::list_all_calendars();
+        let result = calendar::list_all_calendars();
 
         assert_eq!(result["ok"], true)
     }
@@ -60,7 +60,7 @@ mod tests {
             ("month", "9"),
             ("day", "30")
         ];
-        let result = calender::retrieve_current_week(&parameters);
+        let result = calendar::retrieve_current_week(&parameters);
 
         assert_eq!(result["data"]["weeks"][0], 1)
     }
