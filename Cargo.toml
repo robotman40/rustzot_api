@@ -1,6 +1,6 @@
 [package]
 name = "rustzot_api"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2024"
 description = "A Rust API wrapper for the Anteater API at UCI (https://anteaterapi.com)"
 authors = ["Chris Rios <robotman40@protonmail.com"]
