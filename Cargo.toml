@@ -9,7 +9,7 @@ keywords = ["zot", "anteater", "uci", "irvine"]
 categories = ["network-programming", "api-bindings"]
 readme = "README.md"
 repository = "https://github.com/robotman40/rustzot_api.git"
-homepage = "https://github.com/Pierre-Thibault/roman_numerals"
+homepage = "https://github.com/robotman40/rustzot_api"
 
 [dependencies]
 reqwest = {version = "0.12.23", features = ["blocking"]}
